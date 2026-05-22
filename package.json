@@ -1,0 +1,22 @@
+{
+  "name": "dlavie-wa-cloudapi-bot",
+  "version": "1.0.0",
+  "description": "Official WhatsApp Cloud API bot for Dlavie Commerce with AI chat, CS handoff, cart, and checkout integration.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "check": "node --check src/index.js && node --check src/server.js && node --check src/services/bot.service.js && node --check src/services/ai.service.js && node --check src/services/commerce.service.js && node --check src/services/whatsapp.service.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^7.2.0",
+    "openai": "^4.104.0"
+  }
+}
